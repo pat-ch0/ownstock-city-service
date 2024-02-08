@@ -10,9 +10,10 @@ import lombok.Setter;
 @Getter @Setter
 public class City {
     @Id
+    @Column(length = 5, nullable = false)
     private String inseeCode;
-    @Column(length = 5)
+    @Column(length = 5,nullable = false)
     private String postalCode;
-    @Column(length = 75)
+    @Column(length = 75, nullable = false)
     private String name;
 }
